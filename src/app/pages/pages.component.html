@@ -1,0 +1,81 @@
+<ng-container>
+  <mat-toolbar class="example-header">
+    <app-top (test)="sidenav.toggle()"></app-top>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav" fixedInViewport="true" fixedTopGap="66" fixedBottomGap="0">
+      <app-sidebar></app-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <!-- <mat-sidenav-content [formGroup]="options"> -->
+      <div class="al-main">
+        <div class="al-content">
+          <app-content-top></app-content-top>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+
+
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <!-- <mat-toolbar class="example-footer">Footer</mat-toolbar> -->
+</ng-container>
+
+<!-- <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div> -->
+
+
+
+
+<!-- <mat-drawer-container class="example-container" autosize>
+  
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+    <div class="al-content">
+      <app-content-top></app-content-top>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+
+</mat-drawer-container> -->
+
+
+
+
+<!-- <app-sidebar></app-sidebar>
+<app-top></app-top>
+<div class="al-main">
+  <div class="al-content">
+    <app-content-top></app-content-top>
+    <router-outlet></router-outlet>
+  </div>
+</div> -->
+
+<!-- <ba-sidebar></ba-sidebar>
+<ba-page-top></ba-page-top>
+<div class="al-main">
+  <div class="al-content">
+    <ba-content-top></ba-content-top>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<footer class="al-footer clearfix">
+  <div class="al-footer-right" translate>{{'general.created_with'}} <i class="ion-heart"></i></div>
+  <div class="al-footer-main clearfix">
+    <div class="al-copy">&copy; <a href="http://akveo.com" translate>{{'general.akveo'}}</a> 2016</div>
+    <ul class="al-share clearfix">
+      <li><i class="socicon socicon-facebook"></i></li>
+      <li><i class="socicon socicon-twitter"></i></li>
+      <li><i class="socicon socicon-google"></i></li>
+      <li><i class="socicon socicon-github"></i></li>
+    </ul>
+  </div>
+</footer>
+<ba-back-top position="200"></ba-back-top> -->

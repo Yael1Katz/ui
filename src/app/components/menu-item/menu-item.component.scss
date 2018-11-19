@@ -1,0 +1,29 @@
+span{
+    margin-left: 10px;
+    // color: #ffffff;
+}
+
+.icon{
+    color: #007bff;
+}
+
+li:hover{
+    background-color:  #122143
+}
+
+.al-sidebar-list-item.selected {
+    background-color: #00abff;
+}
+
+.al-sidebar-list-item {
+    display: block;
+    position: relative;
+    float: none;
+    padding: 0;
+}
+
+a.al-sidebar-list-link i {
+    margin-right: 18px;
+    width: 16px;
+    display: inline-block;
+}

@@ -1,0 +1,23 @@
+<li class="al-sidebar-list-item" [title]="menuItem.title">
+  <a class="al-sidebar-list-link" href (click)="onClickMenuItem($event, menuItem)">
+    <i class="{{ menuItem.icon }} icon"></i>
+    <span>{{ menuItem.title }}</span>
+  </a>
+</li>
+
+
+<!-- <li class="nav-item nav-title" [title]="menuItem.title">
+  <a class="nav-link" href (click)="onClickMenuItem($event, menuItem)">
+    <span class="{{ menuItem.icon }} icon"></span>
+    <span>{{ menuItem.title }}</span>
+  </a>
+</li> -->
+<!-- 
+<ba-menu-item _ngcontent-c6="" _nghost-c8="">
+
+  <li class="al-sidebar-list-item" title="External Link">
+    <a _ngcontent-c8="" class="al-sidebar-list-link" href="http://akveo.com" target="_blank">
+      <i _ngcontent-c8="" class="ion-android-exit"></i><span _ngcontent-c8="" translate="">External Link</span>
+    </a>
+  </li>
+</ba-menu-item> -->

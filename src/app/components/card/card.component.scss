@@ -1,0 +1,49 @@
+.card-body{
+    padding: 0px;
+}
+
+.card-title{
+    display:inline;
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    padding: 20px 20px;
+    border-bottom: 0;
+}
+
+h3, .h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: LightSlateGray;
+}
+
+.button{
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    background-color: transparent;
+    color: LightSlateGray;
+    min-width: 165px;
+}
+
+.dropdown-button{
+    margin-left: auto;
+}
+
+.strong{
+    color: black;
+}
+
+.left{
+    float: left;
+}
+
+.dropdown-toggle::after {
+    float: right;
+    margin-top: 8px;
+}
+
+.card{
+    height:300px;
+}

@@ -1,0 +1,25 @@
+<div class="animated fadeIn card" zoom-in>
+  <div *ngIf="cardTitle" class="card-header clearfix">
+    <h3 class="card-title">{{cardTitle}}</h3>
+    <div class="status">
+      <span class="span">5</span>
+      <span class="span pink">2</span>
+    </div>
+
+  </div>
+  <!-- <div class="card-body"> -->
+
+  <div class="layer w-100 fxg-1 scrollable pos-r ps ps--active-y">
+
+    <app-task [task]="task" *ngFor="let task of tasks"></app-task>
+
+
+    <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+      <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+    </div>
+    <div class="ps__rail-y" style="top: 0px; height: 125px; right: 0px;">
+      <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 21px;"></div>
+    </div>
+  </div>
+  <!-- </div> -->
+</div>

@@ -1,0 +1,28 @@
+
+
+        <div class="line-chart">
+            <canvas baseChart style="display: block;height: 200px;width: 713px;" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+                 [legend]="false" [chartType]="lineChartType">
+            </canvas>
+        </div>
+
+
+
+    <!-- <div class="line-chart">
+    <div class="canvas-holder">
+        <canvas baseChart #partsBaseChart="base-chart" [legend]="!1" [data]="doughnutChartData" [options]="pieChartOptions" [labels]="doughnutChartLabels"
+            [chartType]="doughnutChartType"></canvas>
+        <div class="traffic-text">
+            1,560
+            <span>Sales</span>
+        </div>
+    </div>
+
+
+    <div *ngIf="legendData">
+        <ul>
+            <li *ngFor="let legendItem of legendData;let i = index" class="legend-item">{{legendItem.text}}
+            </li>
+        </ul>
+    </div>
+</div> -->

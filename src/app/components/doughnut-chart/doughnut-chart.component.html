@@ -1,0 +1,21 @@
+<div class="doughnut-chart">
+  <div class="traffic-chart" id="trafficChart">
+    <div class="canvas-holder">
+      <canvas baseChart #partsBaseChart="base-chart" width="200px" height="200px" [legend]="!1" [data]="doughnutChartData" [options]="pieChartOptions"
+        [labels]="doughnutChartLabels" [chartType]="doughnutChartType" [colors]="doughnutChartColors"></canvas>
+      <div class="traffic-text">
+        1,560
+        <span>Sales</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div *ngIf="legendData" class="legend">
+    <ul>
+      <li *ngFor="let legendItem of legendData;let i = index" class="legend-item">{{legendItem.text}}
+
+      </li>
+    </ul>
+  </div>
+</div>

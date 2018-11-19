@@ -1,0 +1,11 @@
+<div class="animated fadeIn card" zoom-in>
+  <div *ngIf="cardTitle" class="card-header clearfix">
+    <h3 class="card-title">{{cardTitle}}</h3>
+    <div class="status">
+      <span class="span pink">2</span>
+    </div>
+  </div>
+  <div class="layer w-100 fxg-1 scrollable pos-r ps ps--active-y">
+    <app-message [message]="message" *ngFor="let message of messages"></app-message>
+  </div>
+</div>
